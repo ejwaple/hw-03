@@ -3,10 +3,109 @@
 
 <head>
     <meta charset=utf-8/>
+    <link rel="stylesheet" href="style.css">
+    <title>hw-03</title>
 </head>
 
-
 <body>
+    
+    <h1 class="centered">hw-03: Interactive Webpage, and Marks & Channels</h1>
+
+    <!-- FLexbox  -->
+    <div class="box">
+        <div class="item">
+            <img src="img/vis1.png" alt="Visualization #1">
+        </div>
+        <div class="item">
+            <h2>Marks</h2>
+            <ol>
+                <li class="bold">Points (states on map)</li>
+                <li class="bold">Area (bar)</li>
+            </ol>
+
+            <h2>Channels</h2>
+            <ul>
+                <li class="bold">Color (both map and bar)</li>
+                    <ul>
+                    <li>Represents the possible categories for political majority and the candidates representing them (red=Trump/Republican majority, blue=Clinton/Democrat majority, red/blue stripes=tie/swing state).</li>
+                    <li>This is a good channel to use as it makes the data quick to interpret by using preexisting color associations and following standard design practice for similar political visualizations of election data.</li>
+                    </ul>
+                <li class="bold">Shape (map only)</li>
+                    <ul>
+                    <li>Represents the actual shape of the state that each point is presenting election data for.</li>
+                    <li>This is a good channel to use as it makes the data quick to interpret by using preexisting shape associations and following standard design practice for similar political visualizations of election data.</li>
+                    </ul>
+                <li class="bold">Position (Both, map only)</li>
+                    <ul>
+                    <li>Represents the geospatial location of the state that each point is presenting election data for.</li>
+                    <li>This is a good channel to use as it makes the data quick to interpret by mapping data onto a recognizable geospatial plane (the United States) and following standard design practice for similar political visualizations of election data.</li>
+                    </ul>
+                <li class="bold">Size (Length, bar only)</li>
+                    <ul>
+                    <li>Represents the proportion of points (electoral college votes) encompassed/held by each category (candidate/political party).</li>
+                    <li>This is a good channel to use as it simiplifies the data below into visualization where the proportion and total majority is much easier to discern, even resembling the political "tug of war" of the election through a recognizable visual language.</li>
+                    </ul>
+            </ul>
+
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li class="bold">Categorical</li>
+                    <ul>
+                    <li>Blue represents a Democratic majority (Clinton) and red represents a Republican majority (Trump).</li>
+                    <li>This is a great use of color as it takes advantage of preexisting color associations where blue is understood to represent the political left (liberal) and red is understood to represent the political right (conservative) in the American two-party political system. Red and blue also have high contrast making this visualization accessible for readers that may be colorblind.</li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="item">
+            <img src="img/vis2.png" alt="Visualization #2">
+        </div>
+        <div class="item">
+            <h2>Marks</h2>
+            <ol>
+                <li class="bold">Points (bins)</li>
+            </ol>
+
+            <h2>Channels</h2>
+            <ul>
+                <li class="bold">Color (both map and bar)</li>
+                    <ul>
+                    <li>Represents to what degree above/below average the scoring value of each bin (batted balls) is based on linear weights (LWTS).</li>
+                    <li>This is a good use of this channel as the divergent colormap allows for hits that are well above or well below average stand out to the reader and provides enough contrast to identify trend-based groupings and discern the two extremes from one another.</li>
+                    </ul>
+                <li class="bold">Position (Both, Horizontal)</li>
+                    <ul>
+                    <li>Represents the speed off the bat or "exit velocity" of each bin (batted balls) in miles per hour (mph) from 40 to 120.</li>
+                    <li>This is a good use of this channel as it produces a 2D plane in which viewers can observe the relationship between two attributes, launch angle and exit velocity, and how these factors may contribute to the scoring value of a given hit. Exit velocity data is also a linear attribute, so presenting it on an axis like this makes it easy to interpret.</li>
+                    </ul>
+                <li class="bold">Position (Both, Vertical)</li>
+                    <ul>
+                    <li>Represents the launch angle of each bin (batted balls) in degrees from -50 to 50.</li>
+                    <li>This is a good use of this channel as it produces a 2D plane in which viewers can observe the relationship between two attributes, launch angle and exit velocity, and how these factors may contribute to the scoring value of a given hit. Launch angle data is also a linear attribute, so presenting it on an axis like this makes it easy to interpret. The addition of additional labels on this axis ("Ground balls", "Line drives", "Fly balls", and "Pop-ups") adds further grouping into specific value ranges that help provide a bit more context between this data and the game of baseball.</li>
+                    </ul>
+            </ul>
+
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li class="bold">Divergent</li>
+                    <ul>
+                    <li>Increasing saturation of orange represents a higher degree above average scoring value (LWTS) while increasing saturation of purple represents a higher degree below average scoring value. No saturation (white) represents the average scoring value.</li>
+                    <li>This is a good use of color as it allows for hits that are well above or well below average to visually stand out to the reader and provides enough contrast to identify trend-based groupings and discern the two extremes from one another. One recommendation, however, would be to use more meaningful colors to communicate the score-based nature of this channel (say green as above average and red as below average) though this may reduce accessibility for viewers that are colorblind.</li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="centered">Acknowledgements</h3>
+
+    <div>
+        <li>A CSS Flexbox Cheatsheet (https://www.digitalocean.com)</li>
+        <li>A Complete Guide to Flexbox (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+        <li>Visualizations (https://fivethirtyeight.com/features/the-52-best-and-weirdest-charts-we-made-in-2016/)</li>
+
+    </div>
 
 
 </body>
