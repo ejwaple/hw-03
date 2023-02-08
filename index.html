@@ -70,7 +70,7 @@
 
             <h2>Channels</h2>
             <ul>
-                <li class="bold">Color (both map and bar)</li>
+                <li class="bold">Color</li>
                     <ul>
                     <li>Represents to what degree above/below average the scoring value of each bin (batted balls) is based on linear weights (LWTS).</li>
                     <li>This is a good use of this channel as the divergent colormap allows hits that are well above or well below average to stand out to the reader and provides enough contrast to identify trend-based groupings and discern the two extremes from one another.</li>
@@ -98,12 +98,53 @@
         </div>
     </div>
 
+    <div class="box">
+        <div class="item">
+            <img src="img/vis3.png" alt="Visualization #3">
+        </div>
+        <div class="item">
+            <h2>Marks</h2>
+            <ol>
+                <li class="bold">Points</li>
+            </ol>
+
+            <h2>Channels</h2>
+            <ul>
+                <li class="bold">Color</li>
+                    <ul>
+                    <li>Represents the different categories for gender that were included in this dataset, where blue represents male and pink represents female.</li>
+                    <li>This is a good channel to use as it makes the data quick to interpret by using high contrast to reveal trends between the two groups. While the specific pallete used is a bit cliche, it takes advantage of preexisting color associations to simplify interpretation of the data.</li>
+                    </ul>
+                <li class="bold">Position (Both)</li>
+                    <ul>
+                    <li>Represents exam score values ranging from 1-100% (vertical axis represents reading scores and horizontal axis represents math scores).</li>
+                    <li>This is a good channel to use as it produces a 2D plane in which viewers can observe the relationship between two attributes, exam scores for reading and math, and how these values may be differentially distributed between the two groups. Data from both attributes is also linear, so presenting it on axes like this makes it easy to interpret.</li>
+                    </ul>
+                <li class="bold">Shape</li>
+                    <ul>
+                    <li>Represents whether a given student completed a test preparation course prior to taking the exam, where filled circles represent those who completed the course and X's represent those who did not.</li>
+                    <li>This is a good channel to use as it makes the data quick to interpret by using preexisting shape associations and shapes that are easily distiguishable from one another to represent the different groups.</li>
+                    </ul>
+            </ul>
+
+            <h2>Colormap(s)</h2>
+            <ul>
+                <li class="bold">Categorical</li>
+                    <ul>
+                    <li> Blue represents male students and pink represents female students.</li>
+                    <li>This use of color was meant to make the data quick to interpret by using high-contrast colors to reveal trends between the two groups. While the specific pallete used is a bit cliche, it takes advantage of preexisting color associations to simplify interpretation of the data.</li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+
     <h3 class="centered">Acknowledgements</h3>
 
     <div>
         <li>A CSS Flexbox Cheatsheet (https://www.digitalocean.com)</li>
         <li>A Complete Guide to Flexbox (https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
         <li>Visualizations (https://fivethirtyeight.com/features/the-52-best-and-weirdest-charts-we-made-in-2016/)</li>
+        <li>Student Performance in Exams (https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)</li>
 
     </div>
 
